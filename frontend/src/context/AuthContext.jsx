@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (token) {
-      api.get('/user/profile')
+      api.get('https://popx-g3vt.onrender.com')
         .then(response => {
           setCurrentUser(response.data);
           setIsAuthenticated(true);
