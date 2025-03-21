@@ -30,7 +30,7 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (credentials) => {
     try {
-      const response = await api.post('/auth/login', credentials);
+      const response = await api.post('https://popx-g3vt.onrender.com', credentials);
       localStorage.setItem('token', response.data.token);
       setCurrentUser(response.data.user);
       setIsAuthenticated(true);
@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     try {
-      const response = await api.post('/auth/register', userData);
+      const response = await api.post('https://popx-g3vt.onrender.com', userData);
       localStorage.setItem('token', response.data.token);
       setCurrentUser(response.data.user);
       setIsAuthenticated(true);
