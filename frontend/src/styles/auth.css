@@ -1,0 +1,114 @@
+.auth-container {
+    padding: 2rem;
+  }
+  
+  .auth-form {
+    margin-top: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    color: #6c25ff;
+    font-weight: 500;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"],
+  .form-group input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .input-error {
+    border-color: #ff4d4f !important;
+  }
+  
+  .error-text {
+    color: #ff4d4f;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: block;
+  }
+  
+  .error-message {
+    background-color: #fff1f0;
+    border: 1px solid #ffccc7;
+    padding: 0.75rem;
+    border-radius: 6px;
+    color: #ff4d4f;
+    margin-bottom: 1rem;
+  }
+  
+  .radio-group {
+    margin-top: 1rem;
+  }
+  
+  .radio-options {
+    display: flex;
+    gap: 2rem;
+    margin-top: 0.5rem;
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+  }
+  
+  .radio-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .radio-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+  }
+  
+  .radio-label input:checked ~ .radio-custom {
+    border-color: #6c25ff;
+  }
+  
+  .radio-label input:checked ~ .radio-custom:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6c25ff;
+  }
+  
+  .login-button {
+    background-color: #ccc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    width: 100%;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
