@@ -20,6 +20,13 @@ const LoginPage = () => {
     });
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+    if (!formData.email) newErrors.email = 'Email is required';
+    if (!formData.password) newErrors.password = 'Password is required';
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
   
 
   const handleSubmit = async (e) => {
